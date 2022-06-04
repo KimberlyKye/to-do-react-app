@@ -9,7 +9,7 @@ const AddTodo = React.lazy(
     new Promise((resolve) => {
       setTimeout(() => {
         resolve(import('./Todo/AddTodo'))
-      }, 3000)
+      })
     })
 )
 
@@ -24,7 +24,7 @@ function App() {
         setTimeout(() => {
           setTodos(todos)
           setLoading(false)
-        }, 2000)
+        })
       })
   }, [])
 
